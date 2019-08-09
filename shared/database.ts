@@ -1,8 +1,6 @@
 import config from './config'
 import { Mongoose } from 'mongoose'
 
-console.log(config.mongo.connectionString)
-
 const mongoose = new Mongoose()
 mongoose.connect(
 	config.mongo.connectionString,
